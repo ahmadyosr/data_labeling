@@ -33,10 +33,10 @@ a{
 		 src='{{tender.image.url}}'  >
 	</div>
   <div id='btns' class='col-md-12' >
-  	<a href='{% url "catalogue:index" %}?label=label1&tender_id={{tender.id}}' class='btn btn-success btn-lg '>انشاءات/صيانة ابنية</a><br>
-  	<a href='{% url "catalogue:index" %}?label=label1&tender_id={{tender.id}}' class='btn btn-primary btn-lg '>طرق وجسور</a><br>
-  	<a href='{% url "catalogue:index" %}?label=label2&tender_id={{tender.id}}' class='btn btn-danger btn-lg '>شراء/توريد</a><br>
-  	<a href='{% url "catalogue:index" %}?label=label2&tender_id={{tender.id}}' class='btn btn-warning btn-lg '>بيع أو مزاد</a><br>
+  	<a href='{% url "catalogue:index" %}?label=construction&tender_id={{tender.id}}' class='btn btn-success btn-lg '>انشاءات/صيانة ابنية</a><br>
+  	<a href='{% url "catalogue:index" %}?label=streets&tender_id={{tender.id}}' class='btn btn-primary btn-lg '>طرق وجسور</a><br>
+  	<a href='{% url "catalogue:index" %}?label=import_buy&tender_id={{tender.id}}' class='btn btn-danger btn-lg '>شراء/توريد</a><br>
+  	<a href='{% url "catalogue:index" %}?label=sell_auction&tender_id={{tender.id}}' class='btn btn-warning btn-lg '>بيع أو مزاد</a><br>
   	<a href='{% url "catalogue:index" %}?label=idk&tender_id={{tender.id}}' class='btn btn-default btn-lg '>idk</a><br><br>
   	done : {{categorized_count}}<a href='{% url "catalogue:index" %}?remove_last_tender=True' style='color:white;'>remove last </a>
 
